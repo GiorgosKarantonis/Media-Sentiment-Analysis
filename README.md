@@ -36,9 +36,9 @@ To run the preprocessing and sentiment analysis model just _cd_ to the _src_ fol
 
 1. _python3 clean.py_ to remove missing values and align the different datetime formats. 
 
-2. _python3 preprocess.py_ to align the documents' columns, merge the _tags_, _summary_ and _body_ columns and lowercase, tokenize, remove stopwords and lemmatize all the texts. 
+2. _python3 preprocess.py_ to align the documents' columns, merge the _tags_, _summary_ and _body_ columns and lowercase, tokenize, remove stopwords and lemmatize all the texts _(it may take some time...)_. 
 
-3. _python3 doc2vec.py_ to create the doc2vec model and vectorize the articles. 
+3. _python3 doc2vec.py_ to create the doc2vec model and vectorize the articles _(it may take some time too...)_. 
 
 4. _python3 relevance\_classifier.py_ to create the Feed Forward Neural Network for the articles' relevance-based classification. 
 

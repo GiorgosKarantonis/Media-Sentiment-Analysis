@@ -50,5 +50,6 @@ To run the preprocessing and sentiment analysis model just _cd_ to the _src_ fol
 
 
 
-__That's it!__ Inside the _src/Datasets/Sentiment_ folder you have all the cleaned, filtered and classified files you need. The sentiment is given by the respective column as a raw number, so that you can set your on sentiment sets -e.g. Positive, Negative of Positive, Neutral, Negative- and thresholds. The agenda topic for each article is given from the respective column as an integer number. To map it to the set of descriptive words for its topic you can use the _src/Datasets/agenda.json_ file. 
+## That's it! 
+Inside the _src/Datasets/Sentiment_ folder you have all the cleaned, filtered and classified files you need. The sentiment is given by the respective column as a raw number, so that you can set your on sentiment sets -e.g. Positive, Negative of Positive, Neutral, Negative- and thresholds. The agenda topic for each article is given from the respective column as an integer number. To map it to the set of descriptive words for its topic you can use the _src/Datasets/agenda.json_ file. 
 

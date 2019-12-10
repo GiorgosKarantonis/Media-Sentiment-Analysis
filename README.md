@@ -44,7 +44,11 @@ To run the preprocessing and sentiment analysis model just _cd_ to the _src_ fol
 
 5. _python3 filter\_irrelevant.py_ to filter out all the irrelevant articles from the corpus. 
 
-6. _python3 get\_agenda.py_ to obtain the mayor's agenda topics. 
+6. _python3 get\_agenda.py_ to obtain the mayor's agenda topics and map all the articles of the corpus to their respective agenda topic. 
 
 7. _python3 sentiment\_analysis.py_ to train the Gluon NLP sentiment analysis model and perform sentiment predictions on the corpus. 
+
+
+
+__That's it!__ Inside the _src/Datasets/Sentiment_ folder you have all the cleaned, filtered and classified files you need. The sentiment is given by the respective column as a raw number, so that you can set your on sentiment sets -e.g. Positive, Negative of Positive, Neutral, Negative- and thresholds. The agenda topic for each article is given from the respective column as an integer number. To map it to the set of descriptive words for its topic you can use the _src/Datasets/agenda.json_ file. 
 

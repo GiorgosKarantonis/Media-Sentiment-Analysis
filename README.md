@@ -44,7 +44,7 @@ To run the preprocessing and sentiment analysis model just _cd_ to the _src_ fol
 
 5. _python3 filter\_irrelevant.py_ to filter out all the irrelevant articles from the corpus. 
 
-6. _python3 get\_agenda.py_ to obtain the mayor's agenda topics and map all the articles of the corpus to their respective agenda topic. 
+6. _python3 get\_agenda.py_ to obtain the mayor's agenda topics, using NMF, and map all the articles of the corpus to their respective agenda topic. 
 
 7. _python3 sentiment\_analysis.py_ to train the Gluon NLP sentiment analysis model and perform sentiment predictions on the corpus. 
 

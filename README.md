@@ -5,7 +5,7 @@ This repo is part of the Media Sentiment Analysis Project for BU's CS506 class. 
 
 ## A couple of disclaimers...
 
-1. This file simply provides the steps required to run the mainstream media model and it's not the documentation of our project. If you want to find out more about our approach, our experiments and our results please check our _\_Report.pdf_ file. 
+1. This file simply provides the steps required to run the mainstream media model and it's not the documentation of our project. If you want to find out more about our approach, our experiments and our results please check our _\_Poster.pdf_ (created by @FaizGanz) or our _\_Report.pdf_ file. 
 
 2. No datasets are have been uploaded to this repo, but if you would like to test our model, without having to run our Scraper first, feel free to contact me. 
 

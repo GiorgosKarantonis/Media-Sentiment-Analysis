@@ -10,7 +10,7 @@ from sklearn.decomposition import NMF
 # define the required paths
 DATASETS = './Datasets/'
 RAW_DATASETS = DATASETS + 'Raw/'
-PREPROCESSED_DATASETS = DATASETS + 'Preprocessed/'
+FILTERED_DATASETS = DATASETS + 'Filtered/'
 
 # number of topics to detect
 N_TOPICS = 15
@@ -41,7 +41,7 @@ def create_tf_idf(corpus):
 
 
 
-df = pd.read_csv(PREPROCESSED_DATASETS + 'press_releases.csv')
+df = pd.read_csv(FILTERED_DATASETS + 'press_releases.csv')
 df_temp = pd.read_csv(RAW_DATASETS + 'press_releases.csv')
 
 # drop all the articles published by the mayor's office
@@ -60,12 +60,12 @@ with open(DATASETS + 'agenda.json', 'w') as f:
 	f.write(json.dumps(agenda_topics))
 
 
-datasets = os.listdir(PREPROCESSED_DATASETS)
+datasets = os.listdir(FILTERED_DATASETS)
 
 for file in datasets:
 	if file.endswith('.csv'):
 		print(file)
-		df = pd.read_csv(PREPROCESSED_DATASETS + file)
+		df = pd.read_csv(FILTERED_DATASETS + file)
 
 		for i, article in df.iterrows():
 			article = df.iloc[i]['text'].split()
@@ -86,7 +86,7 @@ for file in datasets:
 
 			df.at[i, 'agenda topic'] = best_topic
 
-		df.to_csv(PREPROCESSED_DATASETS + file, index=False)
+		df.to_csv(FILTERED_DATASETS + file, index=False)
 
 
 

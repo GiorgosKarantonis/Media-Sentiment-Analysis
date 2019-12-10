@@ -1,6 +1,6 @@
 # CS-506-Mainstream-Media-Sentiment-Analysis
 
-This repo is part of the Media Sentiment Analysis Project for BU's CS506 class. The code provided here referres addresses the collection and manipulation of data from various mainstream journals. 
+This repo is part of the Media Sentiment Analysis Project for BU's CS506 class. The code provided here refers addresses the collection and manipulation of data from various mainstream journals. 
 
 
 ## A couple of disclaimers...

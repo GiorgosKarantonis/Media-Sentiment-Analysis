@@ -16,7 +16,7 @@ This repo is part of the Media Sentiment Analysis Project for BU's CS506 class. 
 
 1. Clone or download the repo and _cd_ to its local directory. 
 
-2. Run _pip3 install -r requirements.txt_ to download all the dependancies. 
+2. Run _pip3 install -r requirements.txt_ to download and install all the dependancies. 
 
 3. In the _src_ folder create a folder named _Datasets_. 
 

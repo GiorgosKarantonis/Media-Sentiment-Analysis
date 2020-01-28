@@ -1,8 +1,5 @@
 # CS-506-Mainstream-Media-Sentiment-Analysis
 
-This repo is part of the Media Sentiment Analysis Project for BU's CS506 class. The code provided here refers addresses the collection and manipulation of data from various mainstream journals. 
-
-
 ## A couple of disclaimers...
 
 1. This file simply provides the steps required to run the mainstream media model and it's not the documentation of our project. If you want to find out more about our approach, our experiments and our results please check our _\_Poster.pdf_ (created by @FaizGanz) or our _\_Report.pdf_ file. 

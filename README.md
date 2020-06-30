@@ -1,30 +1,24 @@
-# CS-506-Mainstream-Media-Sentiment-Analysis
+# Boston Media Sentiment Analysis
 
-## A couple of disclaimers...
+# Introduction
 
-1. This file simply provides the steps required to run the mainstream media model and it's not the documentation of our project. If you want to find out more about our approach, our experiments and our results please check our _\_Poster.pdf_ (created by @FaizGanz) or our _\_Report.pdf_ file. 
+This repo is part of a BU Spark! project for the office of the mayor of Boston and its main goal is to identify the public's opinion about the mayor as well as the way he hanled a variety of his agenda topics. 
 
-2. No datasets are have been uploaded to this repo, but if you would like to test our model, without having to run our Scraper first, feel free to contact me. 
+The repo contains a full pipeline from the collection of the datasets to the agenda definition and sentiment extraction. The datasets used here are collected by the _./Scraper_ from various Boston media outlets and in order to be able to distinguish between quality data and noise, without having to manually label hundreds of thousands of articles, I've implemented and incorporated in the preprocessing part a small Feed Forward Neural Network which manages to achieve an accuracy of 99.83% in the test set. Also, since I didn't have the exact topics of the mayor's agenda, I approximated them performing topic modeling with NMF. Finally, for the sentiment analysis I trained the Gluon NLP model. 
 
 
 ## Running the code
 
 ### Preparation
 
-1. Clone or download the repo and _cd_ to its local directory. 
+1. Run _pip3 install -r requirements.txt_ to download and install all the dependencies. 
 
-2. Run _pip3 install -r requirements.txt_ to download and install all the dependencies. 
-
-3. In the _src_ folder create a folder named _Datasets_. 
-
-4. Inside the _Datasets_ folder create another one named _Raw_. 
-
-5. Place all the datasets you obtained, either by running the Scraper yourself or by contacting me, inside the _Raw_ folder. 
+2. Place all the datasets you obtained inside the _src/Datasets/Raw_ folder. 
 
 
-### Scraper
+### Running the Scraper
 
-Scraping is always unpredictable; what ran perfectly yesterday may not work at all today... So, in order to save time and frustration, I would advice contacting me first for the datasets. If, on the other hand, you want to test the Scraper yourself, you can execute it like any other _Scrapy_ project. 
+Scraping is always unpredictable; what ran perfectly yesterday may not work at all today... So, in order to save time and frustration I would advice contacting me first for the datasets. If you want to test the Scraper yourself though, you can run it like any other _Scrapy_ project. 
 
 
 ### Running the model
@@ -43,7 +37,7 @@ To run the preprocessing and sentiment analysis model just _cd_ to the _src_ fol
 
 6. _python3 get\_agenda.py_ to obtain the mayor's agenda topics, using NMF, and map all the articles of the corpus to their respective agenda topic. 
 
-7. _python3 sentiment\_analysis.py_ to train the Gluon NLP sentiment analysis model and perform sentiment predictions on the corpus. 
+7. _python3 sentiment\_analysis.py_ to train the Gluon NLP sentiment analysis model and perform predictions on the corpus. 
 
 
 
